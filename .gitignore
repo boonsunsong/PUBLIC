@@ -45,6 +45,8 @@ local.properties
 
 [Dd]ebug/
 [Rr]elease/
+exe/
+sys/
 x64/
 x86/
 build/
