@@ -82,6 +82,7 @@ build/
 # Visual C++ cache files
 ipch/
 *.aps
+*.bsc
 *.ncb
 *.opensdf
 *.opt
