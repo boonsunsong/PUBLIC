@@ -1,0 +1,218 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include <windows.h>
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDR_MODULE DIALOG DISCARDABLE  0, 0, 400, 235
+STYLE DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Bromium"
+MENU BROMIUM
+CLASS "bromium"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "&Number of threads:",IDC_STATIC,10,12,80,8
+    EDITTEXT        IDC_EDIT1,90,10,31,14,ES_AUTOHSCROLL
+    LTEXT           "&Add work intervals (ms):",IDC_STATIC,10,32,80,8
+    EDITTEXT        IDC_EDIT2,90,31,31,14,ES_AUTOHSCROLL
+    LTEXT           "&Min work duration (sec):",IDC_STATIC,10,52,80,8
+    EDITTEXT        IDC_EDIT3,90,50,31,14,ES_AUTOHSCROLL
+    LTEXT           "Ma&x work duration (sec):",IDC_STATIC,10,72,80,8
+    EDITTEXT        IDC_EDIT4,90,70,31,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "&Update",IDC_BUTTON1,34,92,70,14
+    PUSHBUTTON      "Pause Adding &Work",IDC_BUTTON2,34,112,70,14
+    LTEXT           "&Idle threads:",IDC_STATIC,130,10,50,13
+    LTEXT           "0",IDC_STATIC1,180,10,20,8
+    LISTBOX         IDC_LIST1,130,22,200,200,LBS_OWNERDRAWFIXED | 
+                    LBS_NOINTEGRALHEIGHT | LBS_NOSEL | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Wor&k:",IDC_STATIC,340,10,20,13
+    LTEXT           "0",IDC_STATIC2,360,10,20,8
+    LISTBOX         IDC_LIST2,340,22,50,200,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_ABOUT DIALOG DISCARDABLE  0, 0, 170, 100
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CLIPSIBLINGS | 
+    WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MODULE,IDC_STATIC,8,8,20,20
+    CTEXT           "Bbromium",IDC_STATIC,30,8,130,8
+    CTEXT           "Version 1.0",IDC_STATIC,30,19,130,8
+    CTEXT           "For internal evaluation only",IDC_STATIC,30,30,130,8
+    DEFPUSHBUTTON   "OK",IDOK,61,79,48,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+BROMIUM MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit",                       ID_FILE_EXIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About...",                   ID_HELP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MODULE              ICON    DISCARDABLE     "bromium.ico"
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x29L
+#else
+ FILEFLAGS 0x28L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "US English bromium\0"
+            VALUE "CompanyName", "NVIDIA Corp.\0"
+            VALUE "FileDescription", "bromium Module\0"
+            VALUE "FileVersion", "1, 0, 0, 0\0"
+            VALUE "InternalName", "bromium\0"
+            VALUE "LegalCopyright", "Copyright (C) 2012 NVIDIA Corp. All Rights Reserved\0"
+            VALUE "LegalTrademarks", "Copyright (C) 2012 NVIDIA Corp. All Rights Reserved\0"
+            VALUE "OriginalFilename", "bromium.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "bromium Module\0"
+            VALUE "ProductVersion", "1, 0, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include <windows.h>\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""manual.rc""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDR_MODULE, DIALOG
+    BEGIN
+        LEFTMARGIN, 10
+        RIGHTMARGIN, 390
+        TOPMARGIN, 10
+        BOTTOMMARGIN, 225
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PAUSE_ADD           "Pause Add &Work"
+    IDS_RESUME_ADD          "Resume Add &Work"
+    IDS_IDLE                "Idle"
+    IDS_SECS                "secs left"
+    IDS_WORK                "total work"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "manual.rc"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
